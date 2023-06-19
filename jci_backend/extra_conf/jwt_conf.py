@@ -3,9 +3,9 @@ from datetime import timedelta
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),  # Время жизни токена доступа
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),     # Время жизни токена обновления
-    'ROTATE_REFRESH_TOKENS': False,
+    'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
-    'UPDATE_LAST_LOGIN': False,
+    'UPDATE_LAST_LOGIN': True,
     'ALGORITHM': 'HS256',
     'SIGNING_KEY': 'your-secret-key',                # Секретный ключ для подписи токена
     'VERIFYING_KEY': None,
