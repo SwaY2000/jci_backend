@@ -1,5 +1,10 @@
 from django.contrib import admin
 
-from main_page.models import FieldModel
+from .models import Achievement, MainBanner, Multimedia, JCIUkrainePresident, Partner, FAQ
 
-admin.site.register(FieldModel)
+admin.site.register(Achievement)
+admin.site.register(MainBanner)
+admin.site.register(Multimedia)
+admin.site.register(JCIUkrainePresident)
+admin.site.register(Partner)
+admin.site.register(FAQ)
