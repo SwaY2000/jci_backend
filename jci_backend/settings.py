@@ -6,6 +6,7 @@ import os
 
 from .extra_conf import *
 
+
 # Загрузка переменных окружения из файла .env
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'core',
     'apps.users',
     'apps.auth',
-    'main_page',
+    'pages.main_page',
 ]
 
 MIDDLEWARE = [
