@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.users',
     'apps.auth',
     'pages.main_page',
+    'pages.donat_links',
 ]
 
 MIDDLEWARE = [
