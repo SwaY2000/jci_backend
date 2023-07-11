@@ -6,6 +6,7 @@ import os
 
 from .extra_conf import *
 
+
 # Загрузка переменных окружения из файла .env
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'drf_yasg',
@@ -38,6 +40,8 @@ INSTALLED_APPS = [
     'core',
     'apps.users',
     'apps.auth',
+    'pages.main_page',
+    'pages.donat_links',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +87,6 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT'),
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
